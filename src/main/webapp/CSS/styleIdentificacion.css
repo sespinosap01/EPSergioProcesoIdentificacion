@@ -1,0 +1,17 @@
+fieldset{
+    border-color: blue;
+    width: 50%;
+    margin: 0 auto;
+}
+
+legend{
+    color: blue;
+}
+
+h3{
+    color: blue;
+}
+
+body{
+    text-align: center;
+}
