@@ -6,6 +6,7 @@
 
 <%
     String usuario = request.getParameter("usuario");
+    // ESTA INFORMACIÓN DEBE ESTAR EN UN ATRIBUTO DE SESIÓN
     if(usuario==null){
         usuario="no identificado";
     }
@@ -24,6 +25,7 @@
 </head>
 
 <body>
+    <%-- PARA QUE UTILIZAS UN FORMULARIO SI LUEGO ACCEDES AL SIGUIENTE COMPONENTE CON UN ENLACE --%>
     <form>
         <fieldset>
             <h2>Menu admin de <%=usuario%> </h2>

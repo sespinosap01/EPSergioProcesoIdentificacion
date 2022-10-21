@@ -9,6 +9,7 @@
 <html lang="es">
 
 <head>
+    <%-- NO DISPONES DE TODAS LAS ETIQUETAS META Y QUE ADEMÁS SE HACE MEDIANTE UN INCLUDE --%>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,9 +31,11 @@
             
             %>
             <label for="usuario">Usuario: </label>
+            <%-- LOS CAMPOS NO TIENEN PORQUE SER REQUERIDOS EN EL CLIENTE --%>
             <%
                 if(request.getAttribute("nombreUsuario")!=null){
                     %>
+                    <%-- SEGÚN INDICAS EN EL CONTROLADOR ControladorIndex CARGAS EL NOMBRE O NADA CON LO QUE ESTA PREGUNTA SOBRA --%>
                     <input type="text" name="usuario" id="usuario" required="required" value="<%=request.getAttribute("nombreUsuario")%>">
                     <%
                 }else{
